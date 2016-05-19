@@ -1,5 +1,7 @@
 # Lato #
 
+Now with cyrillic support.
+
 Lato web font package with font files, less, scss, and CSS.  Why? Because Google's font CDN is slow and occasionally doesn't work.
 
 ## Use ##
