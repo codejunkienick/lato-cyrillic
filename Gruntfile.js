@@ -8,21 +8,11 @@ module.exports = function (grunt) {
       temp: ['temp.css']
     },
 
-    less:{
-      app:{
-        options: {
-          paths: ['less']
-        },
-        files : {
-          'css/lato.css': 'less/lato.less'
-        }
-      }
-    },
 
     sass: {
       dist: {
         files: {
-          'temp.css': 'scss/lato.scss'
+          'css/lato.css': 'scss/lato.scss'
         }
       }
     },
@@ -43,5 +33,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default Task Validates Less and Builds CSS for dist
-  grunt.registerTask("default", ['clean', 'less', 'sass', 'cssmin', 'clean:temp']);
+  grunt.registerTask("default", ['clean', 'sass', 'cssmin' ]);
 };
